@@ -53,6 +53,7 @@ export function TaskTable({ tasks, onEdit, onDelete, onUpdateStatus }: TaskTable
         <TableHeader>
           <TableRow className="hover:bg-transparent">
             <TableHead className="font-semibold">Title</TableHead>
+            <TableHead className="font-semibold">Description</TableHead>
             <TableHead className="font-semibold">Priority</TableHead>
             <TableHead className="font-semibold">Status</TableHead>
             <TableHead className="font-semibold">Assigned To</TableHead>
@@ -66,6 +67,9 @@ export function TaskTable({ tasks, onEdit, onDelete, onUpdateStatus }: TaskTable
             return (
               <TableRow key={task.id} className="group">
                 <TableCell className="font-medium">{task.title}</TableCell>
+                <TableCell className="text-muted-foreground max-w-[200px] truncate">
+                  {task.description || '—'}
+                </TableCell>
                 <TableCell>
                   <PriorityBadge priority={task.priority} />
                 </TableCell>
