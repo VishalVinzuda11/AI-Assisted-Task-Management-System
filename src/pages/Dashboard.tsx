@@ -14,10 +14,10 @@ export default function Dashboard() {
   const recentTasks = activeTasks.slice(0, 5);
 
   return (
-    <div className="space-y-8 animate-fade-in">
+    <div className="space-y-6 sm:space-y-8 animate-fade-in">
       <div>
-        <h1 className="text-2xl font-semibold text-foreground">Dashboard</h1>
-        <p className="text-muted-foreground mt-1">Overview of your tasks</p>
+        <h1 className="text-xl sm:text-2xl font-semibold text-foreground">Dashboard</h1>
+        <p className="text-muted-foreground mt-1 text-sm sm:text-base">Overview of your tasks</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
