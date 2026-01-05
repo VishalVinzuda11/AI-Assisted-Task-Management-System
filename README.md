@@ -1,73 +1,113 @@
-# Welcome to your Lovable project
+# Welcome to My TaskManager System.
 
-## Project info
+# 📝 Task Management System – Frontend
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+This is the **frontend application** for the **Task Management System**, developed using **lovable.dev**.  
+The application provides a clean, responsive, and user-friendly interface for managing daily tasks efficiently.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🚀 Features
 
-**Use Lovable**
+- 📋 Create, update, and delete tasks
+- ✅ Mark tasks as completed or pending
+- 🗂️ Organize tasks by status
+- 🔍 Simple and intuitive UI
+- 📱 Fully responsive design (mobile & desktop)
+- ⚡ Fast and lightweight frontend
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Tech Stack
 
-**Use your preferred IDE**
+- **Platform:** lovable.dev  
+- **Frontend Framework:** React / Vite / TypeScript
+- **Styling:** CSS / Tailwind CSS 
+- **State Management:** React State / Hooks
+- **API Communication:** REST API
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 📁 Project Structure
 
-Follow these steps:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Here's your project structure:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+├── public/
+│   ├── favicon.ico
+│   ├── placeholder.svg
+│   └── robots.txt
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── dashboard/
+│   │   │   └── SummaryCard.tsx
+│   │   ├── layout/
+│   │   │   └── AppLayout.tsx
+│   │   ├── tasks/
+│   │   │   ├── PriorityBadge.tsx
+│   │   │   ├── StatusBadge.tsx
+│   │   │   ├── TaskForm.tsx
+│   │   │   └── TaskTable.tsx
+│   │   ├── ui/                  # shadcn components
+│   │   │   └── (button, card, dialog, etc.)
+│   │   └── NavLink.tsx
+│   ├── context/
+│   │   └── TaskContext.tsx      # Global task state
+│   ├── data/
+│   │   └── mockTasks.ts         # Sample task data
+│   ├── hooks/
+│   │   ├── use-mobile.tsx
+│   │   └── use-toast.ts
+│   ├── lib/
+│   │   └── utils.ts
+│   ├── pages/
+│   │   ├── Dashboard.tsx
+│   │   ├── Index.tsx
+│   │   ├── NotFound.tsx
+│   │   ├── TaskFormPage.tsx
+│   │   └── TaskList.tsx
+│   ├── types/
+│   │   └── task.ts              # Task type definitions
+│   ├── App.tsx                  # Routes & providers
+│   ├── index.css                # Global styles
+│   └── main.tsx                 # Entry point
+├── index.html
+├── tailwind.config.ts
+└── vite.config.ts
 ```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
 
-**Use GitHub Codespaces**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
 
-This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
 
-## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
 
-## Can I connect a custom domain to my Lovable project?
 
-Yes, you can!
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
