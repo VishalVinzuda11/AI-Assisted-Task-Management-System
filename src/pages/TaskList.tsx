@@ -33,12 +33,12 @@ export default function TaskList() {
 
   return (
     <div className="space-y-6 animate-fade-in">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-semibold text-foreground">Tasks</h1>
-          <p className="text-muted-foreground mt-1">Manage and track all tasks</p>
+          <h1 className="text-xl sm:text-2xl font-semibold text-foreground">Tasks</h1>
+          <p className="text-muted-foreground mt-1 text-sm sm:text-base">Manage and track all tasks</p>
         </div>
-        <Button onClick={() => navigate('/tasks/new')}>
+        <Button onClick={() => navigate('/tasks/new')} className="w-full sm:w-auto">
           <Plus className="h-4 w-4 mr-2" />
           New Task
         </Button>
